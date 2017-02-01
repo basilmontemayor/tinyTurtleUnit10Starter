@@ -1,30 +1,37 @@
 TinyTurtle.apply(window);
 
-function square(){
-forward(50);
+function square(x){
+forward(x);
 right(90);
-forward(50);
+forward(x);
 right(90);
-forward(50);
+forward(x);
 right(90);
-forward(50);
+forward(x);
 right(90);
-forward(50);
+forward(x);
 }
-function triangle(){
+function triangle(y){
 right (45);
-forward (90);
+forward (y);
 right (90);
-forward (90);
+forward (y);
 right (135);
-forward (135);
+forward (y);
+}
+function shape(size, angle) {
+ forward (size);
+ right (angle);
+ forward (size);
+ right (angle);
+ forward (size);
+ right (angle);
+ 
 }
 
-function house(){
- function square();
- function triangle();
-}
 // Type your function call below
-house();
+shape(25, 40);
+shape(10, 50);
 
 stamp();
+triangle(45);
